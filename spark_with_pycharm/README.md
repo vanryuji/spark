@@ -7,5 +7,7 @@
 
 # PyCharm setup
 1. Python Interpreter
+![alt text](interpreter.png)
 
 2. Environment Variables
+![alt text](environment_variables.png)
