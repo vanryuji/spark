@@ -48,3 +48,5 @@ vanryuji@spark-slave2:~/spark-2.4.2-bin-hadoop2.7$ ./sbin/start-slave.sh spark:/
 ```shell
 ./bin/spark-submit --master spark://spark-master.asia-northeast1-b.c.supple-flux-235902.internal:7077 examples/src/main/python/wordcount.py examples/src/main/python/transitive_closure.py
 ```
+### 5. Reference
+* https://spark.apache.org/docs/latest/spark-standalone.html
