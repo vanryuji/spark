@@ -14,6 +14,3 @@ PySpark on PyCharm
 2. Environment Variables
 ![alt text](environment_variables.png)
 
-# TODO
-* PyCharm runs application as 'python my_app.py', but Spark example(https://spark.apache.org/docs/latest/streaming-programming-guide.html) says 'spark-submit my_app.py'<br>
-What is difference between them??
