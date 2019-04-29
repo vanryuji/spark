@@ -7,9 +7,9 @@
 
 # Overview
 ![alt text](overview.png)<br>
-I'll submit the wordcount application on master machine
-So the driver program runs on master machine
-(2018.04.29) At this time, Standalone supports only client mode for python
+I'll submit the wordcount application on master machine<br>
+So the driver program runs on master machine<br>
+(2018.04.29) At this time, Standalone supports only client mode for python<br>
 
 
 # Standalone
