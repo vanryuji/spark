@@ -32,9 +32,16 @@ vanryuji@spark-master:~$ cat spark-2.4.2-bin-hadoop2.7/logs/spark-vanryuji-org.a
 ...
 ```
 
-### 3. Start worker(slave)
+### 3. Start workers(slave)
 ```shell
-vanryuji@spark-master:~/spark-2.4.2-bin-hadoop2.7$ ./sbin/start-slave.sh spark://spark-master.asia-northeast1-b.c.supple-flux-235902.internal:7077
+# Slave server #1
+
+vanryuji@spark-slave1:~/spark-2.4.2-bin-hadoop2.7$ ./sbin/start-slave.sh spark://spark-master.asia-northeast1-b.c.supple-flux-235902.internal:7077
+```
+```shell
+# Slave server #2
+
+vanryuji@spark-slave2:~/spark-2.4.2-bin-hadoop2.7$ ./sbin/start-slave.sh spark://spark-master.asia-northeast1-b.c.supple-flux-235902.internal:7077
 ```
 
 ### 4. Submit application on master process machine
