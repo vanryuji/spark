@@ -1,5 +1,9 @@
 # Environments
-* 
+* All machines(master and slave machines)
+** Ubuntu 18.04
+** OpenJDK 1.8
+** Python 2.7
+** Spark 2.4
 
 # Overview
 ![alt text](overview.png)
