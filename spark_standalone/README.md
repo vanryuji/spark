@@ -1,3 +1,5 @@
+How to setup Spark Standalone
+
 # Environments
 * All machines(master and slave machines)<br>
   * Ubuntu 18.04<br>
