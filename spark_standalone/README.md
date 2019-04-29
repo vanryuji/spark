@@ -7,6 +7,7 @@
 
 # Overview
 ![alt text](overview.png)
+I'll submit the wordcount application on master machine
 
 # Standalone
 ### 1. Download Spark
