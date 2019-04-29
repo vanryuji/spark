@@ -1,17 +1,35 @@
 # Environments
-* macOS Mojave 10.14.4<br>
-* PyCharm Community 2019.1<br>
-* pyspark 2.4.2 <br>
-* Oracle Java 12<br>
-* Python 2.7.10<br>
+* 
 
-# PyCharm setup
-1. Python Interpreter
-![alt text](interpreter.png)
+# Overview
+![alt text](overview.png)
 
-2. Environment Variables
-![alt text](environment_variables.png)
+# Standalone
+### 1. Download Spark
+https://spark.apache.org/downloads.html
 
-# TODO
-* PyCharm runs application as 'python my_app.py', but Spark example(https://spark.apache.org/docs/latest/streaming-programming-guide.html) says 'spark-submit my_app.py'<br>
-What is difference between them??
+### 2. Start master
+```shell
+vanryuji@spark-master:~/spark-2.4.2-bin-hadoop2.7$ ./sbin/start-master.sh 
+starting org.apache.spark.deploy.master.Master, logging to /home/vanryuji/spark-2.4.2-bin-hadoop2.7/logs/spark-vanryuji-org.apache.spark.deploy.master.Master-1-spark-master.out
+```
+
+```shell
+# Spark master url is spark://spark-master.asia-northeast1-b.c.supple-flux-235902.internal:7077
+# It's used for connecting to master by worker(slave)
+
+vanryuji@spark-master:~$ cat spark-2.4.2-bin-hadoop2.7/logs/spark-vanryuji-org.apache.spark.deploy.master.Master-1-spark-master.out
+...
+19/04/29 06:14:06 INFO Master: Starting Spark master at spark://spark-master.asia-northeast1-b.c.supple-flux-235902.internal:7077
+...
+```
+
+### 3. Start worker(slave)
+```shell
+vanryuji@spark-master:~/spark-2.4.2-bin-hadoop2.7$ ./sbin/start-slave.sh spark://spark-master.asia-northeast1-b.c.supple-flux-235902.internal:7077
+```
+
+### 4. Submit application on master process machine
+```shell
+./bin/spark-submit --master spark://spark-master.asia-northeast1-b.c.supple-flux-235902.internal:7077 examples/src/main/python/wordcount.py examples/src/main/python/transitive_closure.py
+```
