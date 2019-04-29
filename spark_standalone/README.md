@@ -6,8 +6,11 @@
   * Spark 2.4<br>
 
 # Overview
-![alt text](overview.png)
+![alt text](overview.png)<br>
 I'll submit the wordcount application on master machine
+So the driver program runs on master machine
+(2018.04.29) At this time, Standalone supports only client mode for python
+
 
 # Standalone
 ### 1. Download Spark
