@@ -1,4 +1,8 @@
+# Overview
 How to setup Spark Standalone
+![alt text](overview.png)<br>
+
+
 
 # Environments
 * All machines(master and slave machines)<br>
@@ -7,14 +11,13 @@ How to setup Spark Standalone
   * Python 2.7<br>
   * Spark 2.4<br>
 
-# Overview
-![alt text](overview.png)<br>
+
+
+# Standalone
 I'll submit the wordcount application on master machine<br>
 So the driver program runs on master machine<br>
 (2018.04.29) At this time, Standalone supports only client mode for python<br>
 
-
-# Standalone
 ### 1. Download Spark
 https://spark.apache.org/downloads.html
 
